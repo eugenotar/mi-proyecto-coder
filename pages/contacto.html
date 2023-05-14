@@ -1,38 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos.css">
-    <title>Contacto</title>
-</head>
-<body>
-    <header>
-        <aside class="logo"><span>ENTRE SIERRAS</span></aside>
-        <nav class="barra">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="./zonas.html">Zonas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        :root {
+            --color-primario: #071F4B;
+            --color-secundario: #114FC2;
+            --color-terciario: #6095F7;
+            --color-cuatro: #2E4775;
+            --color-fondo: antiquewhite;
+        }
+    </style>
+    <title>Pre Entrega Proyecto Entre Sierras</title>
 
-    <section></section>
-    <footer>
-        <div class=".Redes">
-            <a href="https://www.instagram.com/entresierrasvet/"><i class="fa-brands fa-instagram"></i></a>
-            <a><i class="fa-regular fa-envelope"></i></a>
-            <a><i class="fa-brands fa-whatsapp"></i></a>
+</head>
+
+<body>
+    <!-- nav bar inicia -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <aside class="logo">
+            <a href="./index.html">
+                <img src="../imagens/logo entre sierras.jpg" alt="Logo de la empresa">
+            </a>
+        </aside>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./equipo.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./zonas.html">Zonas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <p> Todos los derechos reservados por copyrgth</p>
+    </header>
+    <!-- nav bar finaliza -->
+
+    <!-- datos de contacto -->
+    <h2>CONTACTATE CON NOSOTROS</h2>
+    <section class="contact-section"></section>
+    <div class="contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span> TELEFONO: +54 2494- 485195</span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-regular fa-envelope"></i>
+        <span>EMAIL: entresierrasvet@gmail.com</span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-brands fa-facebook"></i>
+        <span>FAN PAGE: Entre Sierras </span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-brands fa-instagram"></i>
+        <span>INSTAGRAM: @entresierrasvet</span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span> DEPOSITO CENTRAL: Tandil, Buenos Aires</span>
+    </div>
+    </section>
+    <!-- finaliza datos contacto -->
+
+    <!-- formulario contacto -->
+    <div class="contactate">
+        <h3>
+            DEJANOS TU CONSULTA
+        </h3>
+    </div>
+    <section>
+        <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+    <!-- finaliza formulario contacto -->
+
+    <!-- trabaja con nosotros -->
+    <section>
+        <div class="trabaja-con-nosotros">
+            <h3>¿Queres trabajar con nosotros?</h3>
+            <p>Envía tu currículum a:</p>
+            <a href="mailto:entresierrasvet@gmail.com">entresierrasvet@gmail.com</a>
+        </div>
+
+    </section>
+    <!-- finaliza trabaja con nosotros -->
+    <footer>
+        <!-- card de mapa -->
+        <div class="card-columns">
+            <div class="card">
+                <img src="../imagens/data=I2PpeHDnZPt6ms5M67K1fIqVvZ_SzjI7MVmvQYuHjYs3OP8AD3PW9TP5BzF8HP6jbfKGaec4vll6L4z9LP-LfzoUhjAE54oaWnZgrBY-2sNi3VHRLcrF-GtMABJVm7Fyp9Aiu4RgiEr0644lMqY0UnHwaVgjiy0zlP7KjAVy-RRJpVYkDYx.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tandil,Buenos Aires, Argentina</h5>
+                </div>
+            </div>
+        </div>
+        <!-- finaliza card mapa -->
+
+        <!-- suscripcion al newsletter -->
+        <div class="newsletter">
+            <a href="./boton sucripcion.html">
+                <button>Suscribite a newsletter</button>
+            </a>
+        </div>
+        <!-- finaliza suscrpcion al newsletter -->
     </footer>
+
     <a href="#" class="subir">
         <i class="fa-solid fa-angle-up"></i>
     </a>
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

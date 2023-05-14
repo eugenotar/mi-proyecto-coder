@@ -1,0 +1,48 @@
+.marcas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .col {
+        flex: 0 0 calc(30% - 20px); 
+        max-width: calc(18% - 20px); 
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        /* ajustando flex y max width cambio tamaño de cards */
+
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+        }
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+    }
+
+    .col:nth-child(-n+3) {
+        order: 1;
+    }
+
+    .col:nth-child(n+4) {
+        order: 2;
+    }
+}
+
+
+
