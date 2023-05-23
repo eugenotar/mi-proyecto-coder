@@ -5,35 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suscribite a newsletter</title>
+    <title>Suscribite a nuestro newsletter</title>
+    <style>
+        :root {
+            --color-primario: #071F4B;
+            --color-secundario: #114FC2;
+            --color-terciario: #6095F7;
+            --color-cuatro: #2E4775;
+            --color-fondo: antiquewhite;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--color-terciario);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: var(--color-primario);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: var(--color-primario);
+        }
+    </style>
 </head>
 
 <body>
-    <form class="form-horizontal" action="/action_page.php">
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Nombre:</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="">
+    <div class="form-container">
+        <h2>Suscribite a nuestro newsletter</h2>
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Ingresa tu nombre">
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Numero de contacto:</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="pwd" placeholder="">
+            <div class="form-group">
+                <label for="contact">Número de contacto:</label>
+                <input type="text" id="contact" placeholder="Ingresa tu número de contacto">
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Email:</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ingresa tu correo electrónico">
             </div>
-        </div>
-        <div>
-            <a href="./home.html">
-            <button>Enviar</button>
-        </a>
-        </div>
-    </form>
+            <div class="form-group">
+                <input type="submit" value="Suscribirse">
+            </div>
+        </form>
+    </div>
 </body>
-</html>
 
+</html>

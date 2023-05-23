@@ -219,13 +219,16 @@ h5 {
 /* finaliza boton de suscripcion */
 
 /* PAGINA PRODUCTOS */
+.productos{
+    background: linear-gradient(to bottom, #17c3f3d8, #1aa6f7,#036be9);
+}
+
+/*ESTILOS CARROUSEL*/
 .carousel-item img {
     max-width: 35%;
     height: auto;
     margin: auto;
 }
-
-/*ESTILOS CARROUSEL*/
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -388,5 +391,47 @@ footer {
     text-align: center;
 }
 
+.description p{
+    text-align: center;
+    margin: 45px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: normal;    
+}
 
 /* FINALIZA ESTILO PAGINA EQUIPO */
+
+/*ZONAS*/
+
+.coverage-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.coverage-table th,
+.coverage-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.coverage-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.coverage-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.coverage-table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+.distribucion-zonas {
+    font-size: 18px;
+    color: var(--color-secundario);
+    text-align: center;
+
+}
+/*FIN PAGINA ZONAS*/
