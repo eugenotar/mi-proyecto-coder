@@ -54,7 +54,7 @@ main {
     height: calc(100vh - 100px);
     width: 100%;
     background-color: rgb(243, 248, 246);
-    background-image: url(../imagens/pexels-svetlana-shemetiuk-394887.jpg);
+    background-image: url(imagens/pexels-svetlana-shemetiuk-394887.jpg);
     background-size: cover;
     background-position: center;
 }
