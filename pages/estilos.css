@@ -107,7 +107,7 @@ h4 {
 
 /* INICIAN CARDS HOME */
 
- .marcas-container {
+.marcas-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ h4 {
         /* ajustando flex y max width cambio tamaño de cards */
 
 
-        img {
+        .img {
             width: 100%;
             height: auto;
             transition: transform 0.3s ease-in-out;
@@ -151,7 +151,7 @@ h4 {
     .col:nth-child(n+4) {
         order: 2;
     }
-} 
+}
 
 /* finalizan cards home */
 /* INCONOS FIJOS REDES SOCIALES */
@@ -219,8 +219,8 @@ h5 {
 /* finaliza boton de suscripcion */
 
 /* PAGINA PRODUCTOS */
-.productos{
-    background: linear-gradient(to bottom, #17c3f3d8, #1aa6f7,#036be9);
+.productos {
+    background: linear-gradient(to bottom, #17c3f3d8, #1aa6f7, #036be9);
 }
 
 /*ESTILOS CARROUSEL*/
@@ -391,12 +391,12 @@ footer {
     text-align: center;
 }
 
-.description p{
+.description p {
     text-align: center;
     margin: 45px;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: normal;    
+    line-height: normal;
 }
 
 /* FINALIZA ESTILO PAGINA EQUIPO */
@@ -434,4 +434,5 @@ footer {
     text-align: center;
 
 }
+
 /*FIN PAGINA ZONAS*/
