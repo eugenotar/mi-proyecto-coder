@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Boostrapt actualiz-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.scss">
+    <!-- Sweet Alert 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.17/sweetalert2.min.css"
+        integrity="sha512-CJ5goVzT/8VLx0FE2KJwDxA7C6gVMkIGKDx31a84D7P4V3lOVJlGUhC2mEqmMHOFotYv4O0nqAOD0sEzsaLMBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>COMPRAS ONLINE</title>
+    <style>
+        :root {
+            --color-primario: #071F4B;
+            --color-secundario: #114FC2;
+            --color-terciario: #6095F7;
+            --color-cuatro: #2E4775;
+            --color-fondo: antiquewhite;
+        }
+        /* Estilos de la barra de búsqueda y carrito */
+        .header-buscador-marco {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .header-buscador-marco input[type="text"] {
+            border: none;
+            outline: none;
+        }
+
+        .header-buscador-marco i {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilo para ajustar el espacio entre la barra de búsqueda y el icono del carrito */
+        header.d-flex {
+            justify-content: space-between;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- nav bar inicia -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 fixed-top">
+        <aside class="logo">
+            <a href="index.html">
+                <img src="imagens/logo entre sierras.jpg" alt="Logo de la empresa">
+            </a>
+        </aside>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CatalogoProductos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zonas.html">Zonas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comprar.html">Compras</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- nav bar finaliza -->
+
+    <h2>COMPRAS ONLINE</h2>
+
+    <body>
+
+        <header class="d-flex align-items-center justify-content-center border-bottom bg-white">
+            <div class="container d-flex align-items-center">
+                <div class="col-6 d-flex align-items-center justify-content-center">
+                    <div class="header-buscador-marco">
+                        <input type="text" name="buscar" id="buscar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-center justify-content-end">
+                    <a class="cart position-relative d-inline-flex" aria-label="View your shopping cart"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-cart-shopping position-relative" id="iconoCarrito">
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                id="badgeCarrito">0</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="container mt-3 d-flex gap-3">
+                <div class="col-9">
+                    <div class="col-12 h60 border bg-white rounded d-flex align-items-center p-3"
+                        id="headerProductos">
+                        Productos destacados
+                    </div>
+                    <div id="productos">
+                        <!-- Contenido de los productos destacados -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Tu pedido</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div id="idCarrito">
+
+                        <div class="row">
+
+                            <div class="col"></div>
+                            <div class="col">Nombre</div>
+                            <div class="col">Precio</div>
+                            <div class="col">Cantidad</div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+            integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.17/sweetalert2.min.js"
+            integrity="sha512-Kyb4n9EVHqUml4QZsvtNk6NDNGO3+Ta1757DSJqpxe7uJlHX1dgpQ6Sk77OGoYA4zl7QXcOK1AlWf8P61lSLfQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/producto.js"></script>
+        <script src="js/gestionarproductos.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+
+
+<footer>
+        <!-- card de mapa -->
+        <div class="card-columns">
+            <div class="card">
+                <img src="imagens/data=I2PpeHDnZPt6ms5M67K1fIqVvZ_SzjI7MVmvQYuHjYs3OP8AD3PW9TP5BzF8HP6jbfKGaec4vll6L4z9LP-LfzoUhjAE54oaWnZgrBY-2sNi3VHRLcrF-GtMABJVm7Fyp9Aiu4RgiEr0644lMqY0UnHwaVgjiy0zlP7KjAVy-RRJpVYkDYx.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tandil,Buenos Aires, Argentina</h5>
+                </div>
+            </div>
+        </div>
+        <!-- finaliza card mapa -->
+
+        <!-- suscripcion al newsletter -->
+        <div class="newsletter">
+            <a href="./boton sucripcion.html">
+                <button>Suscribite a newsletter</button>
+            </a>
+        </div>
+        <!-- finaliza suscrpcion al newsletter -->
+    </footer>
+
+    <a href="#" class="subir">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+</html>

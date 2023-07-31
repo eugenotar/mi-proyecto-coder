@@ -1,5 +1,6 @@
 /*PRIMER PASO PARA COMPRAR ES SER VETERINARIO*/
 
+/*
 //validar si puede realizar una compra mayorista
 let tieneMatricula = parseInt(prompt("Ingrese matricula vetertinaria"));
 
@@ -27,8 +28,8 @@ class CarritoCompras {
         return "#" + this.id + " - " + this.descripcion + " $ " + this.precio;
     }
 }
-
-// Base de datos de los productos
+*/
+/*
 let arreglo_productos = [];
 arreglo_productos.push(new CarritoCompras(1, "Ivermectina", 4000));
 arreglo_productos.push(new CarritoCompras(2, "Pipeta Frontline Perros", 1000));
@@ -123,4 +124,4 @@ function mostrarCarrito(articulos) {
 
     alert("Total de la compra: $" + totalCompra);
 }
-
+*/
